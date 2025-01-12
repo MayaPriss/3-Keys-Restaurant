@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    background-color:#FFFDE7;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+}
+      .header{
+    height: 20vh;
+    position: relative;
+          }
+      .heading-territory{
+    color: black;
+    font-family: 'Lora', serif;
+            }
+
+      .navbar{
+    height: 120px;
+    width: 100%;
+    background-color: #aef359;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    z-index: 10;
+}
+       .navbar-box{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: white;;
+}
+       .navbar-list{
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Lora', serif;
+}
+        .navbar-items{
+     display: inline-block;
+    }
+    .navbar-link-img{
+    margin-left: 20px;
+}
+.navbar-link:visited, 
+.navbar-link:link{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    transition: all .25 ease;
+}
+.navbar-link:hover{
+    text-decoration: none;
+    color: #028A0F;
+padding: 2rem 2rem;
+border: 1px solid #028A0F;
+border-radius: 200px;
+box-shadow: 0 0 1rem rgba(2, 138, 15, 1.0);
+text-shadow: 0 .3rem 1rem rgba(0,0,0, .5);
+}
+.navbar-link-img:hover{
+
+border: 2px solid #028A0F;
+border-radius: 200px;
+box-shadow: 0 0 1rem rgba(2, 138, 15, 1.0);
+}
+.toggle{
+    height: 3rem;
+    width: 5rem;
+    display: none;
+}
+.toggle div{
+    height: 4px;
+    width: 50%;
+    background-color: white;
+    margin: 0.5rem;
+}
+      #ong {
+        text-align: center;
+        color: black;
+        font-size: 50px;
+      }
+      #ong2 {
+        text-align: center;
+        color: black;
+        font-size: 40px;
+      }
+      .main {
+        text-align: center;
+        margin: 0 15rem;
+      }
+      .mid {
+        margin: 0 15rem;
+      }
+
+      #halal4{
+        box-sizing: border-box;
+        border-style: groove;
+        border-color: green;
+        width: 1050px;
+        text-align: center;
+        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: greenyellow;
+      }
+
+      #halal3{
+       color: green;
+       font-size: 30px;
+      }
+
+      #halal2{
+        text-align: center;
+        display: block;
+        margin-right: auto;
+        margin-left: auto; 
+      }
+
+      #halal{
+        box-sizing: border-box;
+        width: 300px;
+      }
+
+      #lee{
+        box-sizing: border-box;
+        border-style: solid;
+        border-color:lightskyblue;
+        margin-left: auto;
+        margin-right: auto;
+        width: 495px;
+        height: 494px;
+        display: block;
+      }
+
+      #halalli{
+        font-family: 'cursive' serif;
+        
+      }
+      #faq {
+        text-align: center;
+      }
+      #faq2{
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: black;
+        width: 600px;
+      }
+
+      #yes {
+        box-sizing: border-box;
+        border-style: solid;
+      }
+
+      #quality{
+        
+        text-align: center;
+      }
+      #quality2{
+        box-sizing: border-box;
+        border-style: solid;
+        border-color:black;
+        width: 600px;
+      }
+      #italic{
+        font-style: italic;
+        color: black;
+      }
+
+      #objectives{
+        text-align: center;
+      }
+      #objectives2{
+        box-sizing: border-box;
+        border-style: solid;
+        border-color:black;
+        width: 500px;
+      }
+
+      .footer{
+    background: #094C09;
+    color: lightgoldenrodyellow;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    margin-top: 12%;
+    font-family: 'Lora', serif
+}
+.footer p{
+    color:lightgoldenrodyellow;
+}
+.footer h2{
+    color: lightgoldenrodyellow;
+}
+.footer h3{
+    color:lightgoldenrodyellow;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 0.5%;
+    text-align: center;
+}
+    
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-3{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.footer hr{
+    border: none;
+    background: lightgoldenrodyellow;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.footer-container{
+    max-width:1300px ;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.copyright{
+    text-align: center;
+}
+
+/* FOOTER */
+    </style>
+  </head>
+  <body>
+    <section class="header">
+      <nav class="navbar">
+        <div class="navbar-box">
+             <img src="logo.png" width="75px"> 
+             <h5 class="heading-territory">3 KEYs Restaurant</h3>
+        </div>
+
+        <ul class="navbar-list"> 
+                 <li class="navbar-items"><a href="3 Keys Restaurant.html" class="navbar-link">Home</a></li>
+                 <li class="navbar-items"><a href="specialmenu.html" class="navbar-link">Specials</a></li>
+                 <li class="navbar-items"><a href="3 KEYs chinese menu.html" class="navbar-link">Chinese Cuisines</a></li>
+                 <li class="navbar-items"><a href="Malay cuisine.html" class="navbar-link">Malay Cuisines</a></li>
+                 <li class="navbar-items"><a href="3 KEYs indian menu.html" class="navbar-link">Indian Cuisines</a></li>
+                 <li class="navbar-items"><a href="3 KEYs drinks menu.html" class="navbar-link">Drinks</a></li>
+                 <li class="navbar-items"><a href="feedback.html" class="navbar-link">Feedback</a></li>
+                 <li class="navbar-items"><a href="cart1.html"><img class="navbar-link-img" src="cart.png" width="20px" height="20px"></a></li>
+                 <li class="navbar-items"><a href=""><img class="navbar-link-img" src="search.png" width="20px" height="20px"></a></li>
+        </ul>
+        <div class="toggle">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+      </nav>
+    </section>
+    <br />
+    <div class="main">
+      <div id="lee"><img src="lee.png" alt="lee"></div><br>
+      <h1 id="ong">ABOUT US</h1><br>
+      <p>
+        3 KEYs began with a professional badminton player turned ambitious young chef, Lee Chong Jia. Born in 1993,
+        he discovered his talent for cooking at the young age of 11. It wasn't
+        until after he graduated from Taylor's University with a diploma in
+        culinary arts where he found his love for Malaysian food. Lee Chong Jia
+        was a man who was very friendly and has always wanted nothing but peace
+        and unity for the country. He had the idea of opening up a restaurant
+        which would enable any diners to experience all the marvelous food
+        available in Malaysia. With this idea in mind, he opened up 3 KEYs on
+        September 6th, 2020.
+      </p>
+    </div>
+    <br />
+    <div class="mid">
+      <div id="halal2"><img id="halal" src="halal.jpg" alt="halal"></div>
+      <h2 id="ong2">HALAL POLICY</h2><br>
+    <div id="halal4">
+        The halal food complies with Islamic Law or Shariah. Halal stipulates
+        that food consumed must be:
+      <div class="list" style="display: inline-block; text-align: left">
+        <ul id="halalli" style="list-style-type:disc">
+          <li>Hygienic</li>
+          <li>Not harmful to health</li>
+          <li>
+            Free from any parts of animal origin that is forbidden by the
+            shariah.
+          </li>
+          <li>
+            Free from anything regarded as 'filth'(najis) under Islamic Law.
+          </li>
+        </ul>
+      </div>
+      <br />
+      In addition, meat products must be derived from animals that are
+        permissible and slaughtered according to Islamic Law. <br /><br />
+        The products that are used in <span id="keys">3 KEYs</span> are
+        certified Halal by the source country local Islamic food and nutrition
+        certification recognised by JAKIM.
+    </div>
+      <br />
+      Our restaurant is <b id="halal3">100% halal</b>.<br/><br />
+         The foods served on our menu are
+        <b><span style="color: red; font-size: 2rem">100% pork-free</span></b>
+        and comply with Halal requirements in relation to the cooking process.<br /><br /><br />
+      <div id="quality"><img id="quality2" src="quality.jpg" alt="quality"></div>
+      <h2 id="ong2">QUALITY ASSURANCE</h2><br>
+      <p>
+        Our restaurant hygiene and food quality are always top-notch as we want
+        to provide our customers with high quality products.<br /><br />
+        The performance of the supplier for our restaurant are monitored through
+        submission of quality reports.<br /><br>
+        Our restaurant also goes by the main attribute for excellence - <b>CHAMPS</b>.
+        <ul style="list-style-type:disc">
+            <li><b>C</b> - Cleanliness</li>
+            <li><b>H</b> - Hospitality</li>
+            <li><b>A</b> - Accuracy</li>
+            <li><b>M</b> - Maintenance</li>
+            <li><b>P</b> - Product Quality</li>
+            <li><b>S</b> - Speed of Service</li>
+          </ul><br />
+          This <b>CHAMPS</b> attribute covers all aspects such as cleanliness and maintenance, sanitation and personal hygiene
+          as well as product quality. It also takes into account the speed of service, hospitality, personal safety, training and documentation. <br /><br />
+          As much as our restaurant is top-notch on the food and hygiene department, we also want to ensure the customer service provided are top-notch.<br /><br />
+          To gather direct feedback from customers, an online survey program is used. <a href="feedback.html">Here</a>, customers can rate and comment on the cleanliness, staff friendliness, speed of service, order accuracy, food taste and overall satisfaction. <br /><br />
+          This gives room to our restaurant for continuous improvement and makes sure our customers are always satisfied.<br /><br />
+      </p>
+      <div id="faq"><img id="faq2" src="faq.jpg" alt="faq"></div>
+      <h2 id="ong2">Frequently Asked Questions</h2><br>
+      <p>
+       
+        <b>1. How much time does it take for the delivery to arrive after placing an order?</b> <br />
+      - We strive to deliver our service as fast as we can to meet your needs. The delivery time depends on the distance between the shop and the location.<br /><br />
+        <b>2. What are the payment options available for KFC Delivery?</b> <br />
+        The following payment options are available for KFC Delivery:
+      <ul style="list-style-type:disc">
+      <li><b>Cash</b>(Only for orders below RM 150)</li>
+      <li><b>Credit Card</b>(Visa & MasterCard)</li>
+      <li><b>Debit Card</b>(Visa & MasterCard)</li>
+    </ul>
+        <b>3. When is the operating hours for 3 KEY's delivery?</b><br />
+      - 3 Key's Delivery is available from 10.00 am to 10.30 pm from Mondays to Sundays including public holidays. <br /><br />
+        <b>4. What if the delivery was never delivered/delayed from expected time?</b><br />
+      - On the off chance that a situation like that ever happens, we will be offering a full refund + a free meal of your choice as an apology for our mistakes.<br />
+       <p style="font-size: 17px;">*If you have further questions which are not listed above, please do not hesitate to contact 3 KEY's Customer Care at 1300-222-666*
+        (from 10.00 am - 10.30 pm)</p><br />
+       </p>
+       <div id="objectives"><img id="objectives2" src="objectives.jpg" alt="objectives"></div>
+       <h2 id="ong2"><b>Objectives</b></h2><br>
+     <ul id="italic" style="list-style-type:square">
+      <li>To establish an <b>affordable</b> and <b>high quality</b> restaurant with international standards for diners to enjoy.</li><br />
+      <li>To allow ease of access to all the different and unique cuisines in <b>Malaysia</b>.</li><br />
+      <li>To give our customers the <b>best</b> possible experience using the best of our abilities. </li><br />
+     </ul>
+    </div>
+<!---footer--->
+<div class="footer">
+  <div class="footer-container">
+      <div class="row" style="display: grid;
+      grid-template-columns: repeat(3, 1fr);
+       justify-self: center;
+      grid-gap: 3rem;">
+          <div class="footer-col-1">
+              <h1>Download Our App</h1>
+              <p>Download App for Android and IOS mobile phone</p>
+              <div class="app-logo">
+                  <img src="download1.png" width="175px" height="60px"><br/>
+                  <img src="download2.png" width="175px" height="56px">
+              </div>
+          </div>
+          <div class="footer-col-2">
+              <h2>Secure Payment</h2>
+              <img src="mastercard.png" width="75px" height="50px">
+              <img src="visa.png" width="75px" height="50px">
+              <img src="paypal.png" width="75px" height="50px">
+          </div>
+          <div class="footer-col-3">
+            <h3>Get in Touch</h3>
+              <ul>
+                  <li>Contact Us</li>
+                  <li>3 KEYs Customer Care</li><br/>
+                  <img src="facebook.png" width="50px" height="50px">
+                  <img src="instagram.png" width="50px" height="50px">
+              </ul>
+          </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright 2021 - 3 KEYs</p>
+  </div>
+</div>
+ <!-- //footer -->
+  </body>
+</html>

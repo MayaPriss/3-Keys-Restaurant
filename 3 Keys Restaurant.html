@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Keys Restaurant-ECOMMERCE Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleHome.css">
+</head>
+
+<body>
+    <div class="header">
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" width="100px">
+        </div>
+            <nav>
+                <ul>
+                    <li><a href="3 Keys Restaurant.html">Home</a></li>
+                    <li><a href="specialmenu.html">Specials</a></li>
+                    <li><a href="3 KEYs chinese menu.html">Chinese Cuisine</a></li>
+                    <li><a href="Malay cuisine.html">Malay Cuisine</a></li>
+                    <li><a href="3 KEYs indian menu.html">Indian Cuisine</a></li>
+                    <li class="navbar-items"><a href="3 KEYs drinks menu.html" class="navbar-link">Drinks</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="cart1.html"><img src="cart.png" width="15px" height="15px"></a></li>
+                    <li><a href=""><img src="search.png" width="15px" height="15px" ></a></li>
+                </ul>
+            </nav>
+        </div>
+    <div class="row">
+            <div class="col-2">
+                <img src="main.png" width="1200px" height="700px">
+            </div>
+    </div>
+    </div>
+
+<!-----restaurant categories ----->
+    <div class="categories">
+        <div class="small-container">
+            <h1 style="text-align:center;">Our Restaurant</h1>
+            <h3 style="color: darkgreen;">serves the 3 main cuisines in Malaysia</h3><br/><br/>
+        <div class="row">
+            <div class="col-3">
+                <img src="food1.jpg" width="350px" height="500px">
+                <div class="layer">
+                        <a href="3 KEYs chinese menu.html" class="menu">Chinese Cuisine</a>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="food2.jpg" width="400px" height="500px">
+                <div class="layer"> 
+                       <a href="Malay cuisine.html" class="menu">Malay Cuisine</a>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="food3.jpg" width="400px" height="500px">
+                <div class="layer">
+                        <a href="3 KEYs indian menu.html" class="menu">Indian Cuisine</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+<!---deals-->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="slideshow1.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="slideshow2.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="slideshow3.png" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+<!---team--->
+<div class="team">
+    <div class="team-small-container"><br/>
+        <h1 style="text-align:center;">Team</h1>
+        <h3 style="color: darkgreen; text-align:center;">Our Chef</h3><br/><br/>
+    <div class="row">
+        <div class="team-item">
+        <div class="col-4">
+            <img src="chef1.jpg" width="300px" height="350px" alt="team-item">
+            <div class="team-item-info">
+            <h2>Lee Wei Ken</h2>
+            <p style="color:black;">head chef</p>
+            </div>  
+        </div>          
+        </div>
+        <div class="col-4">
+            <div class="team-item">
+            <img src="chef2.jpg" width="300px" height="350px" alt="team-item">
+            <div class="team-item-info">
+                <h2>Abdel Rahim</h2>
+                <p style="color:black;">head chef</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="team-item">
+            <img src="chef3.jpg" width="300px" height="350px" alt="team-item">
+            <div class="team-item-info">
+                <h2>SajanaReyna</h2>
+                <p style="color:black;">head chef</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!--testimonials-->
+<div class="testimonials">
+    <div class="testimonial-container"></div><br/><br/>
+            <div class="testiomonial-title">
+                <h1 style="text-align: center;">Testimonials</h1>
+                <p style="text-align: center;">Some feedbacks</p><br/><br/>
+            </div>
+        <div class="row">
+        <div class="col-5">
+            <div class="testo-item">
+                <div class="testi-author">
+                    <div class="testi-author-name">
+                        <h3>Gordan Ramsay</h3>
+                        <span>Food specialist</span>
+                    </div>
+                    <div class="testi-author-img">
+                    <img src="fs1.jpg" alt="testi-author-img" width="50px" height="50px">
+                    </div>
+                </div>
+            </div>
+                <p>This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes and beautiful presentation. I recommend to everyone! I would like to come back here again and again.</p>
+                <div class="ratings">
+                    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div class="testo-item">
+                    <div class="testi-author">
+                        <div class="testi-author-name">
+                            <h3>Yeow Poh Ling</h3>
+                            <span>Food specialist</span>
+                        </div>
+                        <div class="testi-author-img">
+                        <img src="fs2.jpg" alt="testi-author-img" width="50px" height="50px">
+                        </div>
+                    </div>
+                </div>
+                    <p>It’s a great experience. The ambiance is very welcoming and charming. Amazing wines, food and service. Staff are extremely knowledgeable and make great recommendations.</p>
+                    <div class="ratings">
+                        <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+
+                <div class="col-5">
+                    <div class="testo-item">
+                        <div class="testi-author">
+                            <div class="testi-author-name">
+                                <h3>Baek Jong-Won</h3>
+                                <span>Food specialist</span>
+                            </div>
+                            <div class="testi-author-img">
+                            <img src="fs3.jpg" alt="testi-author-img" width="50px" height="50px">
+                            </div>
+                        </div>
+                    </div>
+                        <p>This place is great! Atmosphere is chill and cool but the staff is also really friendly. They know what they’re doing and what they’re talking about, and you can tell making the customers happy is their main priority. Food is pretty good, it’s 100% worth it.</p>
+                        <div class="ratings">
+                            <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+        
+        </div>
+    </div>
+</div>
+
+
+
+    <!---footer--->
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h1>Download Our App</h1>
+                        <p>Download App for Android and IOS mobile phone</p>
+                        <div class="app-logo" style="text-align: center;">
+                            <img src="download1.png" width="175px" height="60px"><br/>
+                            <img src="download2.png" width="175px" height="56px">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <h2>Secure Payment</h2>
+                        <img src="mastercard.png" width="50px" height="50px">
+                        <img src="visa.png" width="50px" height="50px">
+                        <img src="paypal.png" width="50px" height="50px">
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Get In Touch</h3>
+                        <ul>
+                            <li>Contact Us</li>
+                            <li>3 KEYs Customer Care</li><br/>
+                            <img src="facebook.png" width="50px" height="50px">
+                            <img src="instagram.png" width="50px" height="50px">
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021 - 3 KEYs</p>
+            </div>
+        </div>
+
+
+</body>
+</html>
